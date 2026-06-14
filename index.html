@@ -1,0 +1,1277 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divyapath Poojan Seva — Pandit Harish Mishra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="x-icon/image" href="bhagwat-vyas.jpg"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Yatra+One&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --saffron: #e8650a;
+        --saffron-deep: #b84a00;
+        --saffron-glow: #ff8c2a;
+        --gold: #c9932a;
+        --gold-light: #f5d77a;
+        --gold-pale: #fdf3dc;
+        --maroon: #7b1c2a;
+        --maroon-deep: #4a0e18;
+        --cream: #fbf6ee;
+        --parchment: #f5ecd7;
+        --ink: #1c1208;
+        --ink-soft: #3d2b10;
+        --muted: #7a6240;
+        --border: rgba(180, 120, 40, 0.22);
+        --border-gold: rgba(201, 147, 42, 0.4);
+        --white: #ffffff;
+
+        /* FIX 1: Enforce strong system fallbacks for dynamic Devanagari */
+        --font-display: "Yatra One", "Tiro Devanagari Hindi", "Noto Sans Devanagari", serif;
+        --font-body: "Tiro Devanagari Hindi", "Noto Sans Devanagari", "Inter", serif;
+        --font-ui: "Inter", sans-serif;
+      }
+      .cont-dev{
+        padding: 10px 5px;
+        border-radius: 30px;
+        font-weight: bolder;
+        font-size: large;
+        font-family: sans-serif;
+        color: #df4949;
+        margin: 5px;
+        background-color: transparent;
+      }
+      #serv{
+        position: fixed;
+        text-align: center;
+        bottom: 110px;
+        left: 20px;
+        display: none;
+        font-weight: 600;
+        font-family: sans-serif;
+        background: white;
+        border: 2px solid #e8650a;
+        border-radius: 15px;
+        padding: 10px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        min-width: 220px;
+      }
+      #serv ul {
+  text-align: center;
+  padding-left: 20px;
+}
+
+#serv li {
+  margin: 6px 0;
+}
+      #serv.active{
+        display: block;
+      }
+      .back-btn{
+        background: red;
+        padding: 10px;
+        border-radius: 10px;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: white;
+        height: 40px;
+        text-decoration: none;
+        text-align: center;
+        width: 60px;
+        outline: none;
+        border: none;
+        bottom: 160px;
+        left: 75px;
+        font-size: 15px;
+      }
+      .call-btn {
+        position: fixed;
+        bottom: 30px;
+        font-size: 30px;
+        background: var(--saffron);
+        padding: 7px 10px;
+        height: 75px;
+        width: 75px;
+        right: 20px;
+        z-index: 10;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 102%;
+        border: 2px dashed black;
+      }
+      .left{
+        left: 30px;
+        width: fit-content;
+        border-radius: 40px;
+      }
+      .left p{
+        font-size: large;
+      }
+      .contact-floating {
+        position: fixed;
+        text-align: center;
+        bottom: 20px;
+        right: 110px;
+        display: none;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        background: #fff;
+        border: 2px solid #e8650a;
+        border-radius: 15px;
+        padding: 10px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        z-index: 9;
+        min-width: 220px;
+      }
+      .contact-floating.active{
+        display: block;
+      }
+      .contact-floating h4 {
+        color: #b84a00;
+        margin-bottom: 10px;
+      }
+
+      .contact-floating a {
+        display: block;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        margin: 8px 0;
+      }
+
+      @media (max-width: 768px) {
+        .contact-floating {
+          left: 10px;
+          right: 10px;
+          bottom: 10px;
+          min-width: auto;
+        }
+        .call-btn {
+          right: 15px;
+          bottom: 20px;
+          padding: 5px 7.5px;
+          font-size: 30px;
+          z-index: 10;
+        }
+        .back-btn{
+          bottom: 300px;
+          left: 175px;
+        }
+        .om-symbol img{
+          height: 100px;
+  
+        }
+        .header-banner{
+          height: 100px;
+        }
+      }
+
+      html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+
+      body {
+        background: var(--cream);
+        color: var(--ink);
+        font-family: var(--font-body);
+        font-size: 16px;
+        line-height: 1.75;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+      .zoom{
+        zoom: 1.5;
+      }
+      /* Hamburger Menu */
+      .hamburger-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .hamburger-btn span {
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        border-radius: 5px;
+      }
+
+      .side-menu {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 280px;
+        height: 100%;
+        background: #4a0e18;
+        z-index: 1000;
+        transition: 0.3s;
+        padding: 80px 20px 20px;
+        overflow-y: auto;
+      }
+
+      .side-menu.active {
+        right: 0;
+      }
+
+      .side-menu h3 {
+        color: #f5d77a;
+        margin-bottom: 10px;
+      }
+
+      .side-menu a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .menu-section {
+        margin-top: 25px;
+        color: white;
+      }
+
+      .menu-section p {
+        margin: 8px 0;
+      }
+
+      .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        display: none;
+      }
+
+      .overlay.active {
+        display: block;
+      }
+      /* ── MANDALA BACKGROUND ── */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        background-image: radial-gradient(circle at 15% 20%, rgba(232, 101, 10, 0.06) 0%, transparent 55%),
+          radial-gradient(circle at 85% 80%, rgba(123, 28, 42, 0.06) 0%, transparent 55%),
+          radial-gradient(circle at 50% 50%, rgba(201, 147, 42, 0.04) 0%, transparent 70%);
+      }
+
+      /* ── DECORATIVE BORDER LINES ── */
+      .border-motif {
+        height: 6px;
+        background: repeating-linear-gradient(
+          90deg,
+          var(--saffron) 0px,
+          var(--saffron) 12px,
+          var(--gold) 12px,
+          var(--gold) 18px,
+          var(--maroon) 18px,
+          var(--maroon) 30px,
+          var(--gold) 30px,
+          var(--gold) 36px,
+          var(--saffron) 36px,
+          var(--saffron) 48px
+        );
+      }
+      .border-motif.thin {
+        height: 3px;
+        background: repeating-linear-gradient(
+          90deg,
+          var(--gold) 0px,
+          var(--gold) 8px,
+          var(--parchment) 8px,
+          var(--parchment) 12px,
+          var(--saffron) 12px,
+          var(--saffron) 20px,
+          var(--parchment) 20px,
+          var(--parchment) 24px
+        );
+        opacity: 0.7;
+      }
+
+      /* ── HEADER ── */
+      .site-header {
+        position: relative;
+        z-index: 10;
+        background: linear-gradient(
+          160deg,
+          var(--maroon-deep) 0%,
+          var(--maroon) 40%,
+          #9b2535 70%,
+          var(--saffron-deep) 100%
+        );
+        overflow: hidden;
+      }
+      .site-header::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        background-image: radial-gradient(circle at 10% 50%, rgba(255, 200, 80, 0.08) 0%, transparent 40%),
+          radial-gradient(circle at 90% 50%, rgba(255, 200, 80, 0.08) 0%, transparent 40%);
+      }
+      .header-inner {
+        position: relative;
+        z-index: 1;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 2.5rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 1rem;
+      }
+      .header-inner .upper {
+        padding-top: 7px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 0rem;
+      }
+      @media (min-width: 700px) {
+        .header-inner .upper {
+          flex-direction: row;
+          justify-content: center;
+          gap: 1.5rem;
+        }
+        .header-banner {
+          height: 180px;
+          margin: 0;
+        }
+        .om-symbol img {
+          height: 170px;
+          margin: 0;
+        }
+      }
+      .om-symbol img {
+        height: 160px;
+        margin: 0 0 15px 0;
+        display: block;
+        filter: drop-shadow(0 0 12px rgba(245, 215, 122, 0.5));
+        animation: gentle-glow 4s ease-in-out infinite alternate;
+      }
+      @keyframes gentle-glow {
+        from {
+          text-shadow: 0 0 20px rgba(245, 215, 122, 0.3);
+        }
+        to {
+          text-shadow:
+            0 0 45px rgba(245, 215, 122, 0.7),
+            0 0 80px rgba(232, 101, 10, 0.3);
+        }
+      }
+      .site-title {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 5vw, 3.2rem);
+        font-weight: 400;
+        color: var(--gold-light);
+        letter-spacing: 2px;
+        line-height: 1.2;
+      }
+      .site-tagline {
+        font-family: var(--font-ui);
+        font-size: 0.95rem;
+        font-weight: 300;
+        color: rgba(245, 215, 122, 0.75);
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-top: -1.5rem;
+      }
+      .owner-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 1.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(245, 215, 122, 0.3);
+        border-radius: 40px;
+        flex-direction: column;
+        padding: 7px 20px;
+        font-family: var(--font-ui);
+        font-size: 0.875rem;
+        color: var(--gold-light);
+        letter-spacing: 0.5px;
+      }
+      .header-banner {
+        height: 150px;
+        display: block;
+        margin: 15px;
+        margin-top: 0;
+        border-radius: 100px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+      }
+
+      .owner-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--saffron-glow);
+        flex-shrink: 0;
+      }
+      /* ── MAIN LAYOUT ── */
+      .main-wrap {
+        position: relative;
+        z-index: 1;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 4rem;
+      }
+
+      /* ── SECTION HEADINGS ── */
+      .section-head {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 1.25rem;
+      }
+      .section-head-line {
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(90deg, var(--border-gold), transparent);
+      }
+      .section-head-line.left {
+        background: linear-gradient(270deg, var(--border-gold), transparent);
+      }
+      .section-head h2 {
+        font-family: var(--font-display);
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: var(--maroon);
+        white-space: nowrap;
+      }
+      .section-head .deco {
+        color: var(--gold);
+        font-size: 1rem;
+      }
+
+      /* ── POOJAN GRID ── */
+      .poojan-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+        gap: 1rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .poojan-card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 1.25rem 1.25rem 1rem;
+        cursor: pointer;
+        transition:
+          transform 0.18s,
+          box-shadow 0.18s,
+          border-color 0.18s;
+        position: relative;
+        overflow: hidden;
+      }
+      .poojan-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--saffron), var(--gold), var(--maroon));
+        opacity: 0;
+        transition: opacity 0.18s;
+      }
+      .poojan-card:hover {
+        transform: translateY(-3px);
+        box-shadow:
+          0 8px 28px rgba(123, 28, 42, 0.12),
+          0 2px 8px rgba(0, 0, 0, 0.06);
+        border-color: var(--border-gold);
+      }
+      .poojan-card:hover::before {
+        opacity: 1;
+      }
+      .poojan-card.active {
+        border: 2px solid var(--saffron);
+        box-shadow: 0 6px 24px rgba(232, 101, 10, 0.18);
+      }
+      .poojan-card.active::before {
+        opacity: 1;
+      }
+
+      .card-icon-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 0.75rem;
+      }
+      .card-icon {
+        font-size: 2.2rem;
+        line-height: 1;
+      }
+      .card-badge {
+        font-family: var(--font-ui);
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        color: var(--saffron-deep);
+        background: #fef0e4;
+        border: 1px solid rgba(232, 101, 10, 0.2);
+        border-radius: 20px;
+        padding: 3px 10px;
+      }
+      .card-name {
+        font-family: var(--font-display);
+        font-size: 1.15rem;
+        font-weight: 400;
+        color: var(--maroon);
+        line-height: 1.3;
+        margin-bottom: 3px;
+      }
+      .card-deity {
+        font-family: var(--font-ui);
+        font-size: 0.8rem;
+        color: var(--muted);
+        margin-bottom: 1rem;
+        letter-spacing: 0.3px;
+      }
+      .card-divider {
+        height: 1px;
+        background: linear-gradient(90deg, var(--border-gold), transparent);
+        margin-bottom: 0.75rem;
+      }
+      .card-cost-row {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+      }
+      .card-cost {
+        font-family: var(--font-ui);
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: var(--saffron-deep);
+      }
+      .card-cost-label {
+        font-family: var(--font-ui);
+        font-size: 0.75rem;
+        color: var(--muted);
+      }
+      .card-duration {
+        font-family: var(--font-ui);
+        font-size: 0.78rem;
+        color: var(--muted);
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-top: 6px;
+      }
+
+      /* ── DETAIL PANEL ── */
+      .detail-panel {
+        display: none;
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 2.5rem;
+        animation: slideIn 0.3s ease;
+      }
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .detail-panel.open {
+        display: block;
+      }
+
+      .detail-hero {
+        background: linear-gradient(135deg, var(--maroon-deep) 0%, var(--maroon) 50%, var(--saffron-deep) 100%);
+        padding: 1.75rem 1.75rem 1.5rem;
+        display: flex;
+        gap: 1.25rem;
+        align-items: flex-start;
+      }
+      .detail-hero-icon {
+        font-size: 3rem;
+        line-height: 1;
+        flex-shrink: 0;
+      }
+      .detail-hero-text {
+        flex: 1;
+      }
+      .detail-hero-name {
+        font-family: var(--font-display);
+        font-size: 1.7rem;
+        color: var(--gold-light);
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 4px;
+      }
+      .detail-hero-desc {
+        font-size: 0.9rem;
+        color: rgba(245, 215, 122, 0.7);
+        font-family: var(--font-ui);
+        font-weight: 300;
+        margin-bottom: 10px;
+      }
+      .meta-tags {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .meta-tag {
+        font-family: var(--font-ui);
+        font-size: 0.75rem;
+        color: rgba(245, 215, 122, 0.85);
+        border: 1px solid rgba(245, 215, 122, 0.25);
+        border-radius: 20px;
+        padding: 3px 12px;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .detail-body {
+        padding: 1.5rem 1.75rem;
+      }
+
+      /* ── COST CARDS ── */
+      .cost-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 1.5rem;
+      }
+      @media (max-width: 600px) {
+        .cost-row {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      .cost-card {
+        background: var(--parchment);
+        border-radius: 12px;
+        padding: 0.875rem 1rem;
+        text-align: center;
+        border: 1px solid var(--border);
+      }
+      .cost-card.highlight {
+        background: linear-gradient(135deg, var(--maroon-deep), var(--maroon));
+        border-color: transparent;
+      }
+      .cost-card .c-amount {
+        font-family: var(--font-ui);
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--saffron-deep);
+      }
+      .cost-card.highlight .c-amount {
+        color: var(--gold-light);
+        font-size: 1.5rem;
+      }
+      .cost-card .c-label {
+        font-family: var(--font-ui);
+        font-size: 0.72rem;
+        color: var(--muted);
+        margin-top: 2px;
+        letter-spacing: 0.3px;
+      }
+      .cost-card.highlight .c-label {
+        color: rgba(245, 215, 122, 0.65);
+      }
+
+      /* ── TABS ── */
+      .tabs {
+        display: flex;
+        gap: 6px;
+        margin-bottom: 1.25rem;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 0;
+      }
+      .tab-btn {
+        font-family: var(--font-ui);
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: var(--muted);
+        background: none;
+        border: none;
+        padding: 8px 18px 10px;
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        transition:
+          color 0.15s,
+          border-color 0.15s;
+        margin-bottom: -1px;
+        letter-spacing: 0.3px;
+      }
+      .tab-btn:hover {
+        color: var(--maroon);
+      }
+      .tab-btn.active {
+        color: var(--saffron-deep);
+        border-bottom-color: var(--saffron);
+      }
+
+      .tab-pane {
+        display: none;
+      }
+      .tab-pane.active {
+        display: block;
+      }
+
+      /* ── SAMAGRI TABLE ── */
+      .samagri-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: var(--font-ui);
+        font-size: 0.875rem;
+      }
+      .samagri-table thead th {
+        text-align: left;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--muted);
+        padding: 0 8px 8px;
+        border-bottom: 1px solid var(--border);
+      }
+      .samagri-table thead th.right {
+        text-align: right;
+      }
+      .samagri-table tbody tr {
+        transition: background 0.1s;
+      }
+      .samagri-table tbody tr:hover {
+        background: var(--gold-pale);
+      }
+      .samagri-table tbody td {
+        padding: 9px 8px;
+        border-bottom: 1px solid rgba(180, 120, 40, 0.1);
+        color: var(--ink-soft);
+        vertical-align: top;
+      }
+      .samagri-table tbody tr:last-child td {
+        border-bottom: none;
+      }
+      .samagri-table .qty {
+        color: var(--muted);
+        font-size: 0.8rem;
+      }
+      .samagri-table .cost-cell {
+        text-align: right;
+        font-weight: 600;
+        color: var(--saffron-deep);
+      }
+      .samagri-total-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 8px;
+        border-top: 2px solid var(--border-gold);
+        margin-top: 4px;
+        font-family: var(--font-ui);
+        font-weight: 600;
+      }
+      .samagri-total-row .total-label {
+        font-size: 0.875rem;
+        color: var(--ink-soft);
+      }
+      .samagri-total-row .total-amount {
+        font-size: 1.1rem;
+        color: var(--saffron-deep);
+      }
+
+      /* ── COST BREAKDOWN ── */
+      .breakdown-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 14px;
+        background: var(--parchment);
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        margin-bottom: 8px;
+        font-family: var(--font-ui);
+        font-size: 0.9rem;
+      }
+      .breakdown-row.total {
+        background: linear-gradient(135deg, var(--maroon-deep), var(--maroon));
+        border-color: transparent;
+        border-radius: 10px;
+        margin-top: 6px;
+      }
+      .breakdown-label {
+        color: var(--ink-soft);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .breakdown-label .icon {
+        font-size: 1rem;
+      }
+      .breakdown-row.total .breakdown-label {
+        color: var(--gold-light);
+        font-weight: 500;
+      }
+      .breakdown-value {
+        font-weight: 600;
+        color: var(--saffron-deep);
+        font-size: 1rem;
+      }
+      .breakdown-row.total .breakdown-value {
+        color: var(--gold-light);
+        font-size: 1.2rem;
+      }
+
+      /* ── FOOTER ── */
+      .site-footer {
+        position: relative;
+        z-index: 1;
+        background: var(--maroon-deep);
+        padding: 2.5rem 1.5rem;
+        text-align: center;
+      }
+      .footer-om {
+        font-size: 2rem;
+        color: var(--gold-light);
+        margin-bottom: 0.5rem;
+        display: block;
+      }
+      .footer-name {
+        font-family: var(--font-display);
+        font-size: 1.2rem;
+        color: var(--gold-light);
+        font-weight: 400;
+      }
+      .footer-sub {
+        font-family: var(--font-ui);
+        font-size: 0.8rem;
+        color: rgba(245, 215, 122, 0.5);
+        margin-top: 6px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+      .footer-divider {
+        height: 1px;
+        background: rgba(201, 147, 42, 0.25);
+        max-width: 200px;
+        margin: 1.25rem auto;
+      }
+
+      /* ── SCROLL REVEAL ── */
+      .reveal {
+        opacity: 0;
+        transform: translateY(16px);
+        transition:
+          opacity 0.45s ease,
+          transform 0.45s ease;
+      }
+      .reveal.shown {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ── RESPONSIVE ── */
+      @media (max-width: 480px) {
+        .hamburger-btn {
+          top: 14px;
+          right: 14px;
+          width: 42px;
+          height: 42px;
+        }
+        .om-symbol img{
+          height: 90px;
+  
+        }
+        .header-banner{
+          height: 100px;
+        }
+        .header-inner {
+          padding-top: 0.8rem;
+        }
+
+        .poojan-grid {
+          grid-template-columns: 1fr;
+        }
+        .detail-hero {
+          flex-direction: column;
+        }
+        .site-title {
+          letter-spacing: 1px;
+        }
+        .owner-chip {
+          font-size: 0.78rem;
+          padding: 6px 14px;
+        }
+        .detail-hero {
+          padding: 1.25rem 1.25rem 1rem;
+        }
+        .detail-body {
+          padding: 1.25rem;
+        }
+        .tabs {
+          gap: 2px;
+        }
+        .tab-btn {
+          padding: 8px 10px 10px;
+          font-size: 0.78rem;
+        }
+        .cost-card .c-amount {
+          font-size: 1.15rem;
+        }
+        .samagri-table {
+          font-size: 0.8rem;
+        }
+        .contact-floating {
+          font-size: 0.85rem;
+        
+        }
+        .lower p{
+          font-size: 15px;
+          padding-top: 30px;
+        }
+        .header-inner .upper {
+    flex-direction: column !important; /* Force column layout */
+    gap: 8px; /* Small gap between images */
+    padding: 10px 0;
+  }
+
+  /* 2. Adjust image heights for mobile */
+  .header-banner, 
+  .om-symbol img {
+    height: 150px !important; /* Reduced from 100px/160px */
+    margin: 0 !important;
+    border-radius: 50px; /* Optional: slight rounding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  /* 3. Ensure the container is centered */
+  .header-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="border-motif"></div>
+  <div id="serv">
+  <ul>
+<li>हस्तलिखित जन्म पत्रिका =>₹501</li>
+<li>हस्तलिखित बृहद जन्म कुंडली =>₹2500</li>
+<li>साधारण जन्म पत्रिका कंप्यूटर द्वारा निर्मित =>₹251</li>
+<li>साधारण वृहद जन्म कुंडली कंप्यूटर द्वारा निर्मित =>₹1100</li>
+  </ul>
+</div>
+    <!-- HEADER -->
+    <header class="site-header">
+      <button class="hamburger-btn" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+      <div class="side-menu" id="sideMenu">
+        <h3>Menu</h3>
+
+        <div class="menu-section" id="about">
+          <h3>About</h3>
+          <p>
+दिव्यपथ पूजा पाठ संस्थानम् संपूर्ण पूजन सुविधाएं एवं सामग्री के विस्तृत विवरण और याज्ञिक आचार्य की बुकिंग की जानकारी एवं सुविधा उपलब्ध कराती है।          </p>
+        </div>
+
+        <div class="menu-section" id="services">
+          <h3>Categories</h3>
+<a href="#card-2">गृह शांति पूजन</a>
+<a href="#card-11">महामृत्युंजय मंत्र पूजन</a>
+<a href="#card-15">नवरात्रि पूजन</a>
+<a href="#card-25">पुत्र प्राप्ति पूजन</a>
+<a href="#card-27">महायज्ञ पूजन</a>
+<a href="#card-40">श्राद्ध और त्रिपिंडी</a>
+<a href="#card-54">नवग्रह शांति पूजन</a>
+        </div>
+
+        <div class="menu-section" id="contact">
+          <h3>Contact</h3>
+          <p>📞 6388629839</p>
+          <p>📞 7897642714</p>
+          <p>✉️ hm1380915@gmail.com</p>
+        </div>
+      </div>
+      <div class="header-inner">
+        <div class="upper">
+          <img src="ganeshji.png" class="header-banner">
+          <span class="om-symbol">
+            <img src="divyapath-logo.png" alt="Divyapath Logo" />
+          </span>
+          <img src="bhagwat-vyas.jpg" alt="Bhagwat Vyas" class="header-banner" />
+        </div>
+        <div class="lower">
+          <p class="site-tagline">Sampurn Poojan Samagri &amp; Lagat Jaankari</p>
+
+          <div class="owner-chip">
+            <span class="owner-dot"></span>
+            व्याकरणाचार्य पंडित हरीश मिश्र - काशी वाराणसी
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="border-motif thin"></div>
+
+    <!-- MAIN -->
+    <main class="main-wrap">
+      <div class="section-head reveal">
+        <div class="section-head-line left"></div>
+        <span class="deco">✦</span>
+        <h2>पूजन चुनें</h2>
+        <span class="deco">✦</span>
+        <div class="section-head-line"></div>
+      </div>
+
+      <div class="poojan-grid" id="poojanGrid"></div>
+
+      <!-- DETAIL PANEL -->
+      <div class="detail-panel" id="detailPanel">
+        <div class="detail-hero">
+          <div class="detail-hero-icon" id="dIcon"></div>
+          <div class="detail-hero-text">
+            <div class="detail-hero-name" id="dName"></div>
+            <div class="detail-hero-desc" id="dDesc"></div>
+            <div class="meta-tags" id="dMeta"></div>
+          </div>
+        </div>
+
+        <div class="detail-body">
+          <div class="cost-row" id="costRow"></div>
+        </div>
+      </div>
+    </main>
+
+    <div class="border-motif thin"></div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <span class="footer-om">ॐ</span>
+      <div class="footer-name">व्याकरणाचार्य पंडित हरीश मिश्र - काशी वाराणसी </div>
+      <div class="footer-sub">Divyapath Poojan Seva · kashi varanshi</div>
+        <div class="cont-dev"> 
+      📲 contact dev
+      <p>
+      Contact no =><a href="https://wa.me/918127879959?text=Hello I want to work with you" >+91 8127879959</a>, <a href="https://wa.me/917318074466?text=Hello want to work with you" >7318074466 </a>
+      </p>
+          <p>
+          Email address => anuragtiwarigkp423@gmail.com, anuragtiwarigkp777@gmail.com, np6090840@gmail.com
+          </p>
+      </div>
+      <div class="footer-divider"></div>
+      
+      <div
+        style="
+          font-family: &quot;Inter&quot;, sans-serif;
+          font-size: 0.78rem;
+          color: rgba(245, 215, 122, 0.38);
+          letter-spacing: 0.5px;
+        ">
+        
+        ॐ सर्वे भवन्तु सुखिनः · सर्वे सन्तु निरामयाः
+      </div>
+    </footer>
+
+    <script>
+      /*
+  ─────────────────────────────────────────────────
+  DATA SOURCE — edit divyapath_data.json to update
+  poojan, costs, or samagri. No changes needed here.
+  Both files must be in the same folder.
+  ─────────────────────────────────────────────────
+*/
+      const DATA_FILE = "divyapath_data.json";
+
+      let POOJAN_DATA = null;
+      let selectedId = null;
+
+      /* ── Loading & error states ── */
+      function showLoader() {
+        document.getElementById("poojanGrid").innerHTML = `
+    <div style="grid-column:1/-1;text-align:center;padding:3rem 1rem;color:var(--muted);font-family:var(--font-ui);">
+      <div style="font-size:2rem;margin-bottom:0.75rem;animation:gentle-glow 2s infinite alternate;">🪔</div>
+      <div style="font-size:0.95rem;letter-spacing:1px;">Data load ho raha hai…</div>
+    </div>`;
+      }
+
+      function showError(msg) {
+        document.getElementById("poojanGrid").innerHTML = `
+    <div style="grid-column:1/-1;text-align:center;padding:3rem 1rem;color:#c0392b;font-family:var(--font-ui);
+                background:#fff5f5;border:1px solid #f5c6cb;border-radius:12px;">
+      <div style="font-size:1.5rem;margin-bottom:0.5rem;">⚠️</div>
+      <div style="font-size:0.95rem;font-weight:500;margin-bottom:0.4rem;">Data file load nahi ho saki</div>
+      <div style="font-size:0.8rem;color:#666;">${msg}</div>
+      <div style="font-size:0.78rem;color:#999;margin-top:0.75rem;">
+        Make sure <code>divyapath_data.json</code> is in the same folder as this HTML file.
+      </div>
+    </div>`;
+      }
+
+      /* ── Fetch from JSON file ── */
+      async function loadData() {
+        showLoader();
+        try {
+          const res = await fetch(DATA_FILE);
+          if (!res.ok) throw new Error(`HTTP ${res.status} — ${res.statusText}`);
+          POOJAN_DATA = await res.json();
+          renderGrid();
+          initReveal();
+        } catch (err) {
+          showError(err.message);
+          console.error("[Divyapath] Could not load data:", err);
+        }
+      }
+
+      function fmt(n) {
+        return "₹" + n.toLocaleString("en-IN");
+      }
+
+      function renderGrid() {
+        const grid = document.getElementById("poojanGrid");
+        grid.innerHTML = "";
+        POOJAN_DATA.poojan.forEach((p) => {
+          const card = document.createElement("div");
+          card.className = "poojan-card reveal";
+          card.id = "card-" + p.id;
+          card.innerHTML = `
+      <div class="card-icon-row" id="poojan">
+        <span class="card-icon">${p.image}</span>
+        <span class="card-badge">${p.deity}</span>
+      </div>
+      <div class="card-name">${p.name_hi || p.name}</div>
+      <div class="card-deity">${p.name}</div>
+      <div class="card-divider"></div>
+      <div class="card-cost-row">
+        <span class="card-cost">${fmt(p.cost)}</span>
+        <span class="card-cost-label">Kul Lagat</span>
+      </div>
+      <div class="card-duration">⏱ ${p.duration}</div>
+    `;
+          card.onclick = () => selectPoojan(p.id);
+          grid.appendChild(card);
+        });
+      }
+
+      function selectPoojan(id) {
+        selectedId = id;
+        const p = POOJAN_DATA.poojan.find((x) => x.id === id);
+
+        document.querySelectorAll(".poojan-card").forEach((c) => c.classList.remove("active"));
+        document.getElementById("card-" + id).classList.add("active");
+
+        const samagriCost = p.samagri_total;
+        const panditFee = Math.max(0, p.cost - samagriCost);
+
+        // Hero
+        document.getElementById("dIcon").textContent = p.image;
+        document.getElementById("dName").textContent = p.name_hi || p.name;
+        document.getElementById("dDesc").textContent = p.description;
+        document.getElementById("dMeta").innerHTML = `
+    <span class="meta-tag">⏱ ${p.duration}</span>
+    <span class="meta-tag">🪔 ${p.deity}</span>
+  `;
+
+        // Cost cards
+        document.getElementById("costRow").innerHTML = `
+    <div class="cost-card">
+      <div class="c-amount">${fmt(samagriCost)}</div>
+      <div class="c-label">Samagri Lagat</div>
+    </div>
+    <div class="cost-card">
+      <div class="c-amount">${fmt(panditFee)}</div>
+      <div class="c-label">Pandit Dakshina</div>
+    </div>
+    <div class="cost-card highlight">
+    <a href="#poojan" class="back-btn">Back</a>
+      <div class="c-amount">${fmt(p.cost)}</div>
+      <div class="c-label">Kul Lagat</div>
+    </div>
+  `;
+
+        const panel = document.getElementById("detailPanel");
+        panel.classList.add("open");
+        setTimeout(() => panel.scrollIntoView({ behavior: "smooth", block: "nearest" }), 50);
+      }
+
+      // Scroll reveal
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("shown");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      function initReveal() {
+        document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+      }
+
+      loadData();
+      function toggleMenu() {
+        document.getElementById("sideMenu").classList.toggle("active");
+        document.getElementById("overlay").classList.toggle("active");
+      }
+      function showContact() {
+        document.getElementById("cont").classList.toggle("active");
+      }
+      function showService(){
+         document.getElementById("serv").classList.toggle("active");
+      }
+    </script>
+   <button class="call-btn" onclick="showContact()">📞</button>
+
+<button class="call-btn left" onclick="showService()">
+  📜 <p>कुंडली</p>
+</button>
+    <div class="contact-floating" id="cont">
+      <h4>📞 Contact Us</h4>
+
+      <a href="https://wa.me/916388629839?text=Hello I am interested in your service">6388629839</a>
+      <a href="https://wa.me/917897642714?text=Hello I am interested in your service">7897642714</a>
+
+      <a href="mailto:hm1380915@gmail.com"> hm1380915@gmail.com </a>
+    </div>
+  </body>
+</html>
