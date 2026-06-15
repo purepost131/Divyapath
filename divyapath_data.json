@@ -2,7 +2,7 @@
   "owner": "Harish Mishra",
   "poojan": [
     {
-      "id": 2,
+      "id": 1,
       "name": "Ganesh Poojan",
       "name_hi": "गणेश पूजन",
       "description": "Vighnaharta Ganesh ki pooja aur vandana",
@@ -13,7 +13,7 @@
       "samagri_total": 580
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "grah santi poojan path avam havan",
       "name_hi": "ग्रह शान्ति पूजन पाठ एवं हवन",
       "description": "Nav grahas ki shanti ke liye vishesh poojan",
@@ -24,7 +24,7 @@
       "samagri_total": 1830
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "navgrah mantra jap avam poojan havan",
       "name_hi": "नवग्रह मंत्र जप एवं पूजन हवन",
       "description": "Nav grahas ki shanti ke liye vishesh poojan",
@@ -35,7 +35,7 @@
       "samagri_total": 1830
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "navgrah mantra jap poojan => grah samidha dvara havan",
       "name_hi": "नवग्रह मंत्र जप पूजन => ग्रह समिधा द्वारा हवन ",
       "description": "Nav grahas ki shanti ke liye vishesh poojan",
@@ -46,7 +46,7 @@
       "samagri_total": 1830
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "depawali Lakshmi Poojan",
       "name_hi": "दीपावली लक्ष्मी पूजन",
       "description": "Maa Lakshmi ki kripaa ke liye pooja aur archana",
@@ -57,7 +57,7 @@
       "samagri_total": 1155
     },
     {
-      "id": 7,
+      "id": 6,
       "name": "dhan trayodashi Lakshmi kuber Poojan",
       "name_hi": "धन त्रयोदशी लक्ष्मी कुबेर पूजन",
       "description": "Maa Lakshmi ki kripaa ke liye pooja aur archana",
@@ -68,7 +68,7 @@
       "samagri_total": 1155
     },
     {
-      "id": 8,
+      "id": 7,
       "name": "Rudrabhishek sadharan",
       "name_hi": "रुद्राभिषेक साधारण",
       "description": "Bhagwan Shiv ka pavitra abhishek aur stuti",
@@ -79,7 +79,7 @@
       "samagri_total": 1600
     },
     {
-      "id": 9,
+      "id": 8,
       "name": "Rudrabhishek ekadashni",
       "name_hi": "रुद्राभिषेक एकादशनी",
       "description": "Bhagwan Shiv ka pavitra abhishek aur stuti",
@@ -90,7 +90,7 @@
       "samagri_total": 1600
     },
     {
-      "id": 10,
+      "id": 9,
       "name": "Griha Pravesh Poojan avam havan vaastu shanti hetu jap",
       "name_hi": "गृह प्रवेश पूजन एवं हवन वास्तु शान्ति हेतु जप",
       "description": "Naye ghar mein pravesh ke shubh avsar par poojan",
@@ -101,7 +101,7 @@
       "samagri_total": 3400
     },
     {
-      "id": 11,
+      "id": 10,
       "name": "Griha Pravesh Poojan",
       "name_hi": "गृह प्रवेश पूजन",
       "description": "Naye ghar mein pravesh ke shubh avsar par poojan",
@@ -112,7 +112,7 @@
       "samagri_total": 3400
     },
     {
-      "id": 12,
+      "id": 11,
       "name": "Satyanarayan Poojan Avam Vrat Katha",
       "name_hi": "सत्यनारायण पूजन एवं व्रत कथा",
       "description": "Bhagwan Satyanarayan ki pooja aur vrat katha",
@@ -123,7 +123,7 @@
       "samagri_total": 750
     },
     {
-      "id": 14,
+      "id": 12,
       "name": "Mahamrityunjay Mantra Japyag 125000",
       "name_hi": "महामृत्युंजय मंत्र जपयाग सवा लाख",
       "description": "125000 Mahamrityunjay mantra jap aur havan",
@@ -134,7 +134,7 @@
       "samagri_total": 8500
     },
     {
-      "id": 15,
+      "id": 13,
       "name": "Mahamrityunjay Mantra Japyag 51000",
       "name_hi": "महामृत्युंजय मंत्र जपयाग 51000",
       "description": "51000 Mahamrityunjay mantra jap",
@@ -145,7 +145,7 @@
       "samagri_total": 4500
     },
     {
-      "id": 16,
+      "id": 14,
       "name": "Mahamrityunjay Mantra Japyag 21000",
       "name_hi": "महामृत्युंजय मंत्र जपयाग 21000",
       "description": "21000 Mahamrityunjay mantra jap",
@@ -156,7 +156,7 @@
       "samagri_total": 2500
     },
     {
-      "id": 17,
+      "id": 15,
       "name": "Navratri Poojan Avam Sadharan Durga Saptashati Path",
       "name_hi": "नवरात्रि पूजन एवं साधारण दुर्गा सप्तशती पाठ",
       "description": "9 din Durga Saptashati path",
@@ -167,7 +167,7 @@
       "samagri_total": 3200
     },
     {
-      "id": 18,
+      "id": 16,
       "name": "Navratri Poojan Avam Samputit Durga Saptashati Path",
       "name_hi": "नवरात्रि पूजन एवं संपुटित दुर्गा सप्तशती पाठ",
       "description": "9 din samputit Durga Saptashati path",
@@ -178,7 +178,7 @@
       "samagri_total": 4500
     },
     {
-      "id": 19,
+      "id": 17,
       "name": "Navratri Devi Murti Poojan 3 Din Ek Samay",
       "name_hi": "नवरात्र में देवी मूर्ति पूजन 3 दिन 1 टाइम",
       "description": "Subah ya shaam ek baar poojan",
@@ -189,7 +189,7 @@
       "samagri_total": 900
     },
     {
-      "id": 20,
+      "id": 18,
       "name": "Navratri Devi Murti Poojan 3 Din Do Samay",
       "name_hi": "नवरात्र में देवी मूर्ति पूजन 3 दिन दोनों टाइम",
       "description": "Subah aur shaam poojan",
@@ -200,7 +200,7 @@
       "samagri_total": 1500
     },
     {
-      "id": 21,
+      "id": 19,
       "name": "Sadharan pathatmak Satchandi Mahayagya",
       "name_hi": "साधारण पाठात्मक सतचंडी महायज्ञ",
       "description": "Sat Chandi paath aur yagya",
@@ -211,7 +211,7 @@
       "samagri_total": 12000
     },
     {
-      "id": 22,
+      "id": 20,
       "name": "Samputit pathatmak Sathandi Mahayagya",
       "name_hi": "संपुटित पाठात्मक सतचंडी महायज्ञ",
       "description": "Samputit Sat Chandi paath aur yagya",
@@ -229,7 +229,7 @@
       "duration": "5-7 Din",
       "deity": "Bhagwan Krishna",
       "image": "🦚",
-      "id": 25,
+      "id": 21,
       "samagri_total": 9500
     },
     {
@@ -240,7 +240,7 @@
       "duration": "5-7 Din",
       "deity": "Bhagwan Krishna",
       "image": "🦚",
-      "id": 26,
+      "id": 22,
       "samagri_total": 7500
     },
     {
@@ -251,7 +251,7 @@
       "duration": "7-9 Din",
       "deity": "Bhagwan Krishna",
       "image": "🦚",
-      "id": 27,
+      "id": 23,
       "samagri_total": 3500
     },
     {
@@ -262,11 +262,11 @@
       "duration": "7-9 Din",
       "deity": "Bhagwan Krishna",
       "image": "🦚",
-      "id": 28,
+      "id": 24,
       "samagri_total": 2800
     },
     {
-      "id": 29,
+      "id": 25,
       "name": "अष्टोत्तर शत108 महाविद्या पाठ पूजन",
       "name_hi": "अष्टोत्तर शत108 महाविद्या पाठ पूजन",
       "description": "अष्टोत्तर शत108 महाविद्या पाठ पूजन",
@@ -277,7 +277,7 @@
       "samagri_total": 2200
     },
     {
-      "id": 30,
+      "id": 26,
       "name": "501 पाठ महाविद्या पूजन",
       "name_hi": "501 पाठ महाविद्या पूजन",
       "description": "501 पाठ महाविद्या पूजन",
@@ -288,7 +288,7 @@
       "samagri_total": 3500
     },
     {
-      "id": 31,
+      "id": 27,
       "name": "1100 पाठ महाविद्या पूजन",
       "name_hi": "1100 पाठ महाविद्या पूजन",
       "description": "1100 पाठ महाविद्या पूजन",
@@ -299,7 +299,7 @@
       "samagri_total": 5500
     },
     {
-      "id": 32,
+      "id": 28,
       "name": "श्री बगलामुखी जपयाग सवा लाख 125000",
       "name_hi": "श्री बगलामुखी जपयाग सवा लाख 125000",
       "description": "श्री बगलामुखी जपयाग सवा लाख 125000",
@@ -310,7 +310,7 @@
       "samagri_total": 9000
     },
     {
-      "id": 33,
+      "id": 29,
       "name": "श्री बगलामुखी जपयाग 51000",
       "name_hi": "श्री बगलामुखी जपयाग 51000",
       "description": "श्री बगलामुखी जपयाग 51000",
@@ -321,7 +321,7 @@
       "samagri_total": 4500
     },
     {
-      "id": 34,
+      "id": 30,
       "name": "श्री बगलामुखी जपयाग 21000",
       "name_hi": "श्री बगलामुखी जपयाग 21000",
       "description": "श्री बगलामुखी जपयाग 21000",
@@ -332,7 +332,7 @@
       "samagri_total": 2500
     },
     {
-      "id": 35,
+      "id": 31,
       "name": "साधारण श्री रामचरितमानस अखंड पारायण",
       "name_hi": "साधारण श्री रामचरितमानस अखंड पारायण",
       "description": "साधारण श्री रामचरितमानस अखंड पारायण",
@@ -343,7 +343,7 @@
       "samagri_total": 2500
     },
     {
-      "id": 36,
+      "id": 32,
       "name": "संगीतमय श्री रामचरितमानस अखंड पारायण",
       "name_hi": "संगीतमय श्री रामचरितमानस अखंड पारायण",
       "description": "संगीतमय श्री रामचरितमानस अखंड पारायण",
@@ -354,7 +354,7 @@
       "samagri_total": 3000
     },
     {
-      "id": 35,
+      "id": 33,
       "name": "हरे रामा हरे कृष्णा अखंड संकीर्तन",
       "name_hi": "हरे रामा हरे कृष्णा अखंड संकीर्तन",
       "description": "हरे रामा हरे कृष्णा अखंड संकीर्तन",
@@ -365,7 +365,7 @@
       "samagri_total": 3500
     },
     {
-      "id": 36,
+      "id": 34,
       "name": "108 हनुमान चालीसा पाठ एवं ऋण मोचक मंगल स्तोत्र पाठ",
       "name_hi": "108 हनुमान चालीसा पाठ एवं ऋण मोचक मंगल स्तोत्र पाठ",
       "description": "108 हनुमान चालीसा पाठ एवं ऋण मोचक मंगल स्तोत्र पाठ",
@@ -376,7 +376,7 @@
       "samagri_total": 700
     },
             {
-      "id": 36,
+      "id": 35,
       "name": "108 हनुमान चालीसा पाठ एवं 108 ऋण मोचक मंगल स्तोत्र पाठ प्रति दिन 40 din",
       "name_hi": "108 हनुमान चालीसा पाठ एवं 108 ऋण मोचक मंगल स्तोत्र पाठ 40 din",
       "description": "हनुमान जी एवं ऋण मोचक जी की कृपा के लिए",
@@ -387,7 +387,7 @@
       "samagri_total": 5000
             },
     {
-      "id": 37,
+      "id": 36,
       "name": "1100 हनुमान चालीसा पाठ",
       "name_hi": "1100 हनुमान चालीसा पाठ",
       "description": "1100 हनुमान चालीसा पाठ",
@@ -398,7 +398,7 @@
       "samagri_total": 2500
     },
     {
-      "id": 38,
+      "id": 37,
       "name": "108 हनुमान चालीसा पाठ",
       "name_hi": "108 हनुमान चालीसा पाठ",
       "description": "108 हनुमान चालीसा पाठ",
@@ -409,7 +409,7 @@
       "samagri_total": 600
     },
     {
-      "id": 39,
+      "id": 38,
       "name": "1100 ऋण मोचन मंगल स्तोत्र पाठ",
       "name_hi": "1100 ऋण मोचन मंगल स्तोत्र पाठ",
       "description": "1100 ऋण मोचन मंगल स्तोत्र पाठ",
@@ -420,7 +420,7 @@
       "samagri_total": 1800
     },
     {
-      "id": 40,
+      "id": 39,
       "name": "कालसर्प दोष शान्ति पूजन एवं हवन",
       "name_hi": "कालसर्प दोष शान्ति पूजन एवं हवन",
       "description": "कालसर्प दोष शान्ति पूजन एवं हवन",
@@ -431,7 +431,7 @@
       "samagri_total": 2800
     },
     {
-      "id": 41,
+      "id": 40,
       "name": "वाराणसी में पिशाच मोचन पर त्रिपिंडी श्राद्ध",
       "name_hi": "वाराणसी में पिशाच मोचन पर त्रिपिंडी श्राद्ध",
       "description": "वाराणसी में पिशाच मोचन पर त्रिपिंडी श्राद्ध",
@@ -442,7 +442,7 @@
       "samagri_total": 3500
     },
     {
-      "id": 42,
+      "id": 41,
       "name": "अन्य स्थल पर त्रिपिंडी श्राद्ध",
       "name_hi": "अन्य स्थल पर त्रिपिंडी श्राद्ध",
       "description": "अन्य स्थल पर त्रिपिंडी श्राद्ध",
@@ -453,7 +453,7 @@
       "samagri_total": 2800
     },
     {
-      "id": 43,
+      "id": 42,
       "name": "नारायण बलि श्राद्ध",
       "name_hi": "नारायण बलि श्राद्ध",
       "description": "नारायण बलि श्राद्ध",
@@ -464,7 +464,7 @@
       "samagri_total": 3000
     },
     {
-      "id": 44,
+      "id": 43,
       "name": "पितृपक्ष में पार्वण श्राद्ध",
       "name_hi": "पितृपक्ष में पार्वण श्राद्ध",
       "description": "पितृपक्ष में पार्वण श्राद्ध",
@@ -475,7 +475,7 @@
       "samagri_total": 800
     },
     {
-      "id": 45,
+      "id": 44,
       "name": "पितृपक्ष में पितरों की प्रसन्नता हेतु 24000 पितृ गायत्री जप एवं हवन  ",
       "name_hi": "पितृपक्ष में पितरों की प्रसन्नता हेतु 24000 पितृ गायत्री जप एवं हवन ",
       "description": "पितृपक्ष में पितरों की प्रसन्नता हेतु 24000 पितृ गायत्री जप एवं हवन ",
@@ -486,7 +486,7 @@
       "samagri_total": 2500
     },
     {
-      "id": 46,
+      "id": 45,
       "name": "पवित्र तीर्थ में श्राद्ध",
       "name_hi": "पवित्र तीर्थ में श्राद्ध",
       "description": "पवित्र तीर्थ में श्राद्ध",
@@ -497,7 +497,7 @@
       "samagri_total": 500
     },
     {
-      "id": 47,
+      "id": 46,
       "name": "कन्यापक्ष वैवाहिक परिणय बंधन संस्कार",
       "name_hi": "कन्यापक्ष वैवाहिक परिणय बंधन संस्कार",
       "description": "वैवाहिक परिणय बंधन संस्कार",
@@ -552,7 +552,7 @@
       "samagri_total": 7500
     },
     {
-      "id": 50,
+      "id": 51,
       "name": "संगीतमय श्रीमद् भागवत महापुराण साप्ताहिक कथा ज्ञान यज्ञ",
       "name_hi": "संगीतमय श्रीमद् भागवत महापुराण साप्ताहिक कथा ज्ञान यज्ञ",
       "description": "श्रीमद् भागवत महापुराण साप्ताहिक कथा ज्ञान यज्ञ",
@@ -563,7 +563,7 @@
       "samagri_total": 9000
     },
     {
-      "id": 51,
+      "id": 52,
       "name": "शिव महापुराण कथा यज्ञ",
       "name_hi": "शिव महापुराण कथा यज्ञ",
       "description": "शिव महापुराण कथा यज्ञ",
@@ -574,7 +574,7 @@
       "samagri_total": 6500
     },
     {
-      "id": 52,
+      "id": 53,
       "name": "श्री नवदिवसीय राम कथा",
       "name_hi": "श्री नवदिवसीय राम कथा",
       "description": "श्री नवदिवसीय राम कथा",
@@ -585,7 +585,7 @@
       "samagri_total": 9500
     },
     {
-      "id": 53,
+      "id": 54,
       "name": "कन्या के विवाह में विलंब होने पर कात्यायनी मंत्र जप यज्ञ",
       "name_hi": "कन्या के विवाह में विलंब होने पर कात्यायनी मंत्र जप यज्ञ",
       "description": "कन्या के विवाह में विलंब होने पर कात्यायनी मंत्र जप यज्ञ",
@@ -596,7 +596,7 @@
       "samagri_total": 3500
     },
     {
-      "id": 54,
+      "id": 55,
       "name": "Surya Grah Shanti Jap Havan",
       "name_hi": "सूर्य ग्रह शान्ति जप हवन",
       "description": "सूर्य ग्रह की शान्ति हेतु 7000 वैदिक मंत्र जप एवं हवन",
@@ -607,7 +607,7 @@
       "samagri_total": 1100
     },
     {
-      "id": 55,
+      "id": 56,
       "name": "Chandra Grah Shanti Jap Havan",
       "name_hi": "चंद्र ग्रह शान्ति जप हवन",
       "description": "चंद्र ग्रह की शान्ति हेतु 11000 वैदिक मंत्र जप एवं हवन",
@@ -618,7 +618,7 @@
       "samagri_total": 1080
     },
     {
-      "id": 56,
+      "id": 57,
       "name": "Mangal Grah Shanti Jap Havan",
       "name_hi": "मंगल ग्रह शान्ति जप हवन",
       "description": "मंगल ग्रह की शान्ति हेतु 10000 वैदिक मंत्र जप एवं हवन",
@@ -629,7 +629,7 @@
       "samagri_total": 1120
     },
     {
-      "id": 57,
+      "id": 58,
       "name": "Budh Grah Shanti Jap Havan",
       "name_hi": "बुध ग्रह शान्ति जप हवन",
       "description": "बुध ग्रह की शान्ति हेतु 9000 वैदिक मंत्र जप एवं हवन",
@@ -640,7 +640,7 @@
       "samagri_total": 1120
     },
     {
-      "id": 58,
+      "id": 59,
       "name": "Brihaspati Grah Shanti Jap Havan",
       "name_hi": "बृहस्पति ग्रह शान्ति जप हवन",
       "description": "बृहस्पति ग्रह की शान्ति हेतु 11000 वैदिक मंत्र जप एवं हवन",
@@ -651,7 +651,7 @@
       "samagri_total": 1120
     },
     {
-      "id": 59,
+      "id": 60,
       "name": "Shukra Grah Shanti Jap Havan",
       "name_hi": "शुक्र ग्रह शान्ति जप हवन",
       "description": "शुक्र ग्रह की शान्ति हेतु 16000 वैदिक मंत्र जप एवं हवन",
@@ -662,7 +662,7 @@
       "samagri_total": 1810
     },
     {
-      "id": 60,
+      "id": 61,
       "name": "Shani Grah Shanti Jap Havan",
       "name_hi": "शनि ग्रह शान्ति जप हवन",
       "description": "शनि ग्रह की शान्ति हेतु 23000 वैदिक मंत्र जप एवं हवन",
@@ -673,7 +673,7 @@
       "samagri_total": 1830
     },
     {
-      "id": 61,
+      "id": 62,
       "name": "Rahu Grah Shanti Jap Havan",
       "name_hi": "राहु ग्रह शान्ति जप हवन",
       "description": "राहु ग्रह की शान्ति हेतु 18000 वैदिक मंत्र जप एवं हवन",
@@ -684,7 +684,7 @@
       "samagri_total": 1800
     },
     {
-      "id": 62,
+      "id": 63,
       "name": "Ketu Grah Shanti Jap Havan",
       "name_hi": "केतु ग्रह शान्ति जप हवन",
       "description": "केतु ग्रह की शान्ति हेतु 17000 वैदिक मंत्र जप एवं हवन",
@@ -696,3 +696,4 @@
     }
   ]
 }
+
