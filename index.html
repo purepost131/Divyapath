@@ -52,11 +52,15 @@
         margin: 5px;
         background-color: transparent;
       }
+      .cont-dev a{
+        text-decoration: none;
+        color: cyan;
+      }
       #serv{
         position: fixed;
         text-align: center;
         bottom: 110px;
-        left: 20px;
+        margin: 10px;
         display: none;
         font-weight: 600;
         font-family: sans-serif;
@@ -133,7 +137,7 @@
         border-radius: 15px;
         padding: 10px;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-        z-index: 9;
+        z-index: 99;
         min-width: 220px;
       }
       .contact-floating.active{
@@ -156,7 +160,7 @@
         .contact-floating {
           left: 10px;
           right: 10px;
-          bottom: 10px;
+          bottom: 100px;
           min-width: auto;
         }
         .call-btn {
@@ -910,6 +914,9 @@
           width: 42px;
           height: 42px;
         }
+        .left{
+        left: 10px;
+        }
         .om-symbol img{
           height: 90px;
   
@@ -988,10 +995,10 @@
     <div class="border-motif"></div>
   <div id="serv">
   <ul>
-<li>हस्तलिखित जन्म पत्रिका =>₹501</li>
-<li>हस्तलिखित बृहद जन्म कुंडली =>₹2500</li>
-<li>साधारण जन्म पत्रिका कंप्यूटर द्वारा निर्मित =>₹251</li>
-<li>साधारण वृहद जन्म कुंडली कंप्यूटर द्वारा निर्मित =>₹1100</li>
+<li>हस्तलिखित जन्म पत्रिका ➡️ ₹501</li>
+<li>हस्तलिखित बृहद जन्म कुंडली ➡️ ₹2500</li>
+<li>साधारण जन्म पत्रिका कंप्यूटर द्वारा निर्मित ➡️ ₹251</li>
+<li>साधारण वृहद जन्म कुंडली कंप्यूटर द्वारा निर्मित ➡️ ₹1100</li>
   </ul>
 </div>
     <!-- HEADER -->
@@ -1088,13 +1095,22 @@
       <span class="footer-om">ॐ</span>
       <div class="footer-name">व्याकरणाचार्य पंडित हरीश मिश्र - काशी वाराणसी </div>
       <div class="footer-sub">Divyapath Poojan Seva · kashi varanshi</div>
+      <div class="cont-dev">
+        📞 पूजा संबंधित कार्य के लिए संपर्क करे
+        <h4>📞 Contact Us</h4>
+
+      <a href="https://wa.me/916388629839?text=Hello I am interested in your service">+91 6388629839</a>
+      <a href="https://wa.me/917897642714?text=Hello I am interested in your service">, +91 7897642714</a>
+
+      <a href="mailto:hm1380915@gmail.com"> hm1380915@gmail.com </a>
+      </div>
         <div class="cont-dev"> 
-      📲 contact dev
+      🌐 वेबसाइट संबंधित काम के लिए संपर्क करें
       <p>
-      Contact no =><a href="https://wa.me/918127879959?text=Hello I want to work with you" >+91 8127879959</a>, <a href="https://wa.me/917318074466?text=Hello want to work with you" >7318074466 </a>
+     📞 Contact no <br><a href="https://wa.me/918127879959?text=Hello I want to work with you" >+91 8127879959</a>, <a href="https://wa.me/917318074466?text=Hello want to work with you" >7318074466 </a>
       </p>
           <p>
-          Email address => anuragtiwarigkp423@gmail.com, anuragtiwarigkp777@gmail.com, np6090840@gmail.com
+         📩 Email address <br>anuragtiwarigkp423@gmail.com, np6090840@gmail.com
           </p>
       </div>
       <div class="footer-divider"></div>
@@ -1112,13 +1128,6 @@
     </footer>
 
     <script>
-      /*
-  ─────────────────────────────────────────────────
-  DATA SOURCE — edit divyapath_data.json to update
-  poojan, costs, or samagri. No changes needed here.
-  Both files must be in the same folder.
-  ─────────────────────────────────────────────────
-*/
       const DATA_FILE = "divyapath_data.json";
 
       let POOJAN_DATA = null;
@@ -1266,7 +1275,7 @@
   📜 <p>कुंडली</p>
 </button>
     <div class="contact-floating" id="cont">
-      <h4>📞 Contact Us</h4>
+      <h4>📞 पूजा संबंधित कार्य के लिए संपर्क करे </h4>
 
       <a href="https://wa.me/916388629839?text=Hello I am interested in your service">6388629839</a>
       <a href="https://wa.me/917897642714?text=Hello I am interested in your service">7897642714</a>
