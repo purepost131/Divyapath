@@ -1156,7 +1156,7 @@
     </footer>
 
     <script>
-      const DATA_FILE = "divyapath_data.json";
+    const DATA_FILE = "./divyapath_data.json";
 
       let POOJAN_DATA = null;
       let selectedId = null;
@@ -1187,7 +1187,9 @@
       async function loadData() {
         showLoader();
         try {
-          const res = await fetch(DATA_FILE);
+          const res = await fetch(DATA_FILE + "?v=" + Date.now(), {
+  cache: "no-store"
+});
           if (!res.ok) throw new Error(`HTTP ${res.status} — ${res.statusText}`);
           POOJAN_DATA = await res.json();
           renderGrid();
